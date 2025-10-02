@@ -1,5 +1,4 @@
 //NIM: 12S25019 NAMA: GEBRIEL GLEN MARCEL PAKPAHAN
-
 import java.util.*;
 import java.lang.Math;
 
