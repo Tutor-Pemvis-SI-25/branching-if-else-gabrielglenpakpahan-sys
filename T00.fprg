@@ -4,14 +4,14 @@
         <attribute name="name" value="Latihan"/>
         <attribute name="authors" value="MUG1II"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2025-10-03 02:54:07 PM"/>
+        <attribute name="saved" value="2025-10-03 02:59:00 PM"/>
         <attribute name="created" value="TVVHMUlJO0xBUFRPUC1CQ00wRUxJUzsyMDI1LTEwLTAxOzA4OjM0OjM1IFBNOzI3NzQ="/>
-        <attribute name="edited" value="TVVHMUlJO0xBUFRPUC1CQ00wRUxJUzsyMDI1LTEwLTAzOzAyOjU0OjA3IFBNOzI3OzI5MzU="/>
+        <attribute name="edited" value="TVVHMUlJO0xBUFRPUC1CQ00wRUxJUzsyMDI1LTEwLTAzOzAyOjU5OjAwIFBNOzI5OzI5MzU="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <declare name="bil1, bil2" type="Integer" array="False" size=""/>
+            <declare name="bil1, bil2, y" type="Integer" array="False" size=""/>
             <input variable="bil1"/>
             <input variable="bil2"/>
             <if expression="bil1%2==0">
@@ -47,12 +47,14 @@
             </if>
             <if expression="bil1%2==0 &amp;&amp; bil2%2==0">
                 <then>
-                    <output expression="&quot;Hasil penjumlahan: &quot; &amp; (bil1 + bil2)" newline="True"/>
+                    <assign variable="y" expression="bil1+bil2"/>
+                    <output expression="&quot;Hasil penjumlahan: &quot;" newline="True"/>
                 </then>
                 <else>
                     <if expression="bil1%2!=0 &amp;&amp; bil2%2!=0">
                         <then>
-                            <output expression="&quot;Hasil perkalian: &quot; &amp; (bil1 * bil2)" newline="True"/>
+                            <assign variable="y" expression="bil1*bil2"/>
+                            <output expression="&quot;Hasil perkalian: &quot;" newline="True"/>
                         </then>
                         <else>
                             <output expression="&quot;Berbeda jenis&quot;" newline="True"/>
