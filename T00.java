@@ -1,5 +1,4 @@
 //NIM: 12S25019 NAMA: GEBRIEL GLEN MARCEL PAKPAHAN, NIM: 12S25033 NAMA: MARIA OCTAVIA SIMORANGKIR//
-
 import java.util.*;
 import java.lang.Math;
 
@@ -32,11 +31,11 @@ public class T00 {
         }
         if (bil1 % 2 == 0 && bil2 % 2 == 0) {
             y = bil1 + bil2;
-            System.out.println("Hasil penjumlahan: ");
+            System.out.println("Hasil penjumlahan: " + y);
         } else {
             if (bil1 % 2 != 0 && bil2 % 2 != 0) {
                 x = bil1 * bil2;
-                System.out.println("Hasil perkalian: ");
+                System.out.println("Hasil perkalian: " + x);
             } else {
                 System.out.println("Berbeda jenis");
             }
