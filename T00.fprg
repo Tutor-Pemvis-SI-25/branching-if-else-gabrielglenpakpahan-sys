@@ -4,9 +4,9 @@
         <attribute name="name" value="Latihan"/>
         <attribute name="authors" value="MUG1II"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2025-10-03 02:29:23 PM"/>
+        <attribute name="saved" value="2025-10-03 02:41:09 PM"/>
         <attribute name="created" value="TVVHMUlJO0xBUFRPUC1CQ00wRUxJUzsyMDI1LTEwLTAxOzA4OjM0OjM1IFBNOzI3NzQ="/>
-        <attribute name="edited" value="TVVHMUlJO0xBUFRPUC1CQ00wRUxJUzsyMDI1LTEwLTAzOzAyOjI5OjIzIFBNOzIzOzI5MzE="/>
+        <attribute name="edited" value="TVVHMUlJO0xBUFRPUC1CQ00wRUxJUzsyMDI1LTEwLTAzOzAyOjQxOjA5IFBNOzI1OzI5MzE="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -16,7 +16,7 @@
             <input variable="bil2"/>
             <if expression="bil1%2==0">
                 <then>
-                    <output expression="&quot;Bilangan pertama:Genap&quot;" newline="True"/>
+                    <output expression="&quot;Bilangan pertama: Genap&quot;" newline="True"/>
                 </then>
                 <else>
                     <output expression="&quot;Bilangan pertama: Ganjil&quot;" newline="True"/>
@@ -47,12 +47,12 @@
             </if>
             <if expression="bil1%2==0 &amp;&amp; bil2%2==0">
                 <then>
-                    <output expression="&quot;Hasil penjumlahan &quot; &amp; bil1 + bil2" newline="True"/>
+                    <output expression="&quot;Hasil penjumlahan: &quot; &amp; bil1 + bil2" newline="True"/>
                 </then>
                 <else>
                     <if expression="bil1%2!=0 &amp;&amp; bil2%2!=0">
                         <then>
-                            <output expression="&quot;Hasil perkalian &quot; &amp; bil1 * bil2" newline="True"/>
+                            <output expression="&quot;Hasil perkalian: &quot; &amp; bil1 * bil2" newline="True"/>
                         </then>
                         <else>
                             <output expression="&quot;Berbeda jenis&quot;" newline="True"/>
