@@ -1,9 +1,9 @@
-//NIM: 12S25019 NAMA: GEBRIEL GLEN MARCEL PAKPAHAN
+//NIM: 12S25019 NAMA: GEBRIEL GLEN MARCEL PAKPAHAN, NIM: 12S25033 NAMA: MARIA OCTAVIA SIMORANGKIR
 
 import java.util.*;
 import java.lang.Math;
 
-public class JavaApplication {
+public class T00 BRANCHING {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
