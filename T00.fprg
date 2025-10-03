@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Latihan"/>
+        <attribute name="authors" value="MUG1II"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-03 11:27:21 AM"/>
+        <attribute name="created" value="TVVHMUlJO0xBUFRPUC1CQ00wRUxJUzsyMDI1LTEwLTAxOzA4OjM0OjM1IFBNOzI3NzQ="/>
+        <attribute name="edited" value="TVVHMUlJO0xBUFRPUC1CQ00wRUxJUzsyMDI1LTEwLTAzOzExOjI3OjIxIEFNOzE4OzI5MTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="bil1, bil2" type="Real" array="False" size=""/>
+            <input variable="bil1"/>
+            <input variable="bil2"/>
+            <if expression="abs (bil1)%2==0">
+                <then>
+                    <output expression="&quot;Bilangan pertama: genap&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Bilangan pertama: ganjil&quot;" newline="True"/>
+                </else>
+            </if>
+            <if expression="abs(bil2)%2==0">
+                <then>
+                    <output expression="&quot;Bilangan kedua: genap&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Bilangan kedua: ganjil&quot;" newline="True"/>
+                </else>
+            </if>
+            <if expression="bil1&gt;bil2">
+                <then>
+                    <output expression="&quot;Bilangan pertama lebih besar&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="bil2&gt;bil1">
+                        <then>
+                            <output expression="&quot;Bilangan kedua sama besar&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Berbeda jenis&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <if expression="(abs(bil1)%2==0) &amp;&amp; (abs(bil2)%2==0)">
+                <then>
+                    <output expression="&quot;Hasil penjumlahan&quot; &amp; (bil1 + bil2)" newline="True"/>
+                </then>
+                <else>
+                    <if expression="(abs(bil1)%2!=0) &amp;&amp; (abs(bil2)%2!=0)&amp;&amp; (abs(bil1)%2==0) &amp;&amp; (abs(bil2)%2==0)">
+                        <then>
+                            <output expression="&quot;Hasil perkalian &quot; &amp; (bil1 * bil2)" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Berbeda jenis&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

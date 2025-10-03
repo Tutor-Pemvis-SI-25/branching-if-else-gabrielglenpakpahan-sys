@@ -3,20 +3,20 @@
 import java.util.*;
 import java.lang.Math;
 
-public class T00 BRANCHING {
+public class T00 {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
-        int bil1, bil2;
+        double bil1, bil2;
 
-        bil1 = Integer.parseInt(input.nextLine());
-        bil2 = Integer.parseInt(input.nextLine());
-        if (bil1 % 2 == 0) {
+        bil1 = Double.parseDouble(input.nextLine());
+        bil2 = Double.parseDouble(input.nextLine());
+        if (Math.abs(bil1) % 2 == 0) {
             System.out.println("Bilangan pertama: genap");
         } else {
             System.out.println("Bilangan pertama: ganjil");
         }
-        if (bil2 % 2 == 0) {
+        if (Math.abs(bil2) % 2 == 0) {
             System.out.println("Bilangan kedua: genap");
         } else {
             System.out.println("Bilangan kedua: ganjil");
@@ -25,15 +25,15 @@ public class T00 BRANCHING {
             System.out.println("Bilangan pertama lebih besar");
         } else {
             if (bil2 > bil1) {
-                System.out.println("Bilangan kedua lebih besar");
+                System.out.println("Bilangan kedua sama besar");
             } else {
                 System.out.println("Berbeda jenis");
             }
         }
-        if (bil1 % 2 == 0 && bil2 % 2 == 0) {
+        if (Math.abs(bil1) % 2 == 0 && Math.abs(bil2) % 2 == 0) {
             System.out.println("Hasil penjumlahan" + bil1 + bil2);
         } else {
-            if (bil1 % 2 != 0 && bil2 % 2 != 0 && bil1 % 2 == 0 && bil2 % 2 == 0) {
+            if (Math.abs(bil1) % 2 != 0 && Math.abs(bil2) % 2 != 0 && Math.abs(bil1) % 2 == 0 && Math.abs(bil2) % 2 == 0) {
                 System.out.println("Hasil perkalian " + bil1 * bil2);
             } else {
                 System.out.println("Berbeda jenis");
